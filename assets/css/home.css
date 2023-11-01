@@ -1,0 +1,162 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.center-text h1 {
+    font-size: 44px;
+    font-family: 'Source Sans 3', sans-serif;
+
+    text-align: center;
+    height: 35px;
+}
+
+.center-text p {
+    font-size: 22px;
+    font-family: 'Source Sans 3', sans-serif;
+
+    text-align: center;
+    color: gray;
+}
+
+
+
+.input-container {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    height: 200px;
+    /* padding: 20px; */
+    border-radius: 10px;
+    border: 2px dashed #000000;
+    /* color:black; */
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+
+.input-container:hover {
+    /* background: #eee; */
+    border-color: #111;
+}
+
+input[type=file] {
+    width: 350px;
+    max-width: 100%;
+    color: #3d3c3c;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #555;
+  }
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+   
+    border:none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+}
+
+
+
+.drop-title {
+    /* color:black; */
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: color .2s ease-in-out;
+}
+
+.upload-btn {
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #0c56e0;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+
+.list-center-text {
+    color: white;
+    font-family: 'Source Sans 3', sans-serif;
+    text-align: center;
+    background-color: #444444;
+    margin-top: 50px;
+}
+
+.list-center-text h2 {
+    padding: 5px;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.no-file {
+    font-size: 22px;
+    color: steelblue;
+    text-align: center;
+}
+
+.file-details {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 12px;
+
+}
+
+th {
+    background-color: #eee;
+    font-weight: bold;
+    color: black;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+.view-link {
+    padding: 10px;
+    text-decoration: none;
+    color: #0000f1;
+}
+
+.delete-link {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.upload-btn:hover {
+    transform: translateY(-1.5px);
+    background-color:#0000ff;
+    cursor: pointer;
+}
+
+.files-list {
+    width: 70%;
+    margin: 0px auto;
+}
