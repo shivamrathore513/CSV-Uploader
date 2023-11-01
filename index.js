@@ -1,7 +1,10 @@
 // importing packages
 const express = require('express');
-const port = 8000;
 const app = express();
+// setting port for server
+require("dotenv").config();
+const PORT=process.env.PORT|| 5000;
+
 const path = require('path');
 
 const expressLayouts = require('express-ejs-layouts');
@@ -28,11 +31,11 @@ app.set("views", "./views");
 app.use('/', require('./routes'));
 
 // directing the app in the given port 
-app.listen(port, function(err) {
+app.listen(PORT, function(err) {
     if(err) {
         console.log('Error', err);
         return;
     }
-    console.log('Server is up and running on port: ', port);
+    console.log(`Server is up and running on port: ${PORT}`);
 
 });
